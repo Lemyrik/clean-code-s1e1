@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="container">
     <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg" alt="Todo matrix">
       <a
@@ -19,7 +19,7 @@
       <section class="add-section">
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+          <input id="new-task" class="task text-input" type="text">
           <button class="add-btn">Add</button>
         </div>
       </section>
@@ -27,18 +27,18 @@
         <h2>Todo</h2>
         <ul id="incompleteTasks">
           <li>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox-input">
             <label class="task">Pay Bills</label>
-            <input type="text" class="task">
+            <input type="text" class="task text-input">
             <button class="edit">Edit</button>
             <button class="delete-btn">
               <img class="btn_img" src="./remove.svg" alt="Remove icon">
             </button>
           </li>
           <li class="editMode">
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox-input">
             <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
+            <input type="text" value="Go Shopping" class="task text-input">
             <button class="edit">Save</button>
             <button class="delete-btn">
               <img class="btn_img" src="./remove.svg" alt="Remove icon">
@@ -50,9 +50,9 @@
         <h2>Completed</h2>
         <ul id="completed-tasks">
           <li>
-            <input type="checkbox" checked>
+            <input type="checkbox" class="checkbox-input" checked>
             <label class="task">See the Doctor</label>
-            <input type="text" class="task">
+            <input type="text" class="task text-input">
             <button class="edit">Edit</button>
             <button class="delete-btn">
               <img class="btn_img" src="./remove.svg" alt="Remove icon">
